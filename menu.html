@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>main-page</title>
+     <script src="login.js"></script>
+     <style type="text/css">
+
+#result{
+	width: 300px;
+        height: 300px;
+        overflow: scroll;
+      
+		font-size: 22px;
+        }
+        #result1{
+	width: 300px;
+        height: 300px;
+       
+		font-size: 22px;
+        }
+		
+     </style>
+  </head>
+ 
+  <body bgcolor="#FBCEB1" onload="loadTask()"> 
+	<div id="search">
+		<input  type="text" id="search_">   
+    <button onclick="search(getElementById('search_').value)">Поиск</button>
+    <button onclick="add_me(getElementById('search_').value)">Добавить к себе</button>
+	   </div>
+	<div style="width: 320px; float: left;">
+		 <div  id="result"></div> 	
+ <button onclick="loadTask_before()">BEFORE_LIST</button>
+ <button onclick="loadTask_next()">NEXT_LIST</button>
+</div>
+
+<div style=" margin-left:200px;width: 320px; float: left;">
+  <label>Мои задачи</label>
+  <div  id="result1"></div> 
+  </body>
+</html>

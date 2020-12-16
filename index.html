@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>main-page</title>
+     <script src="login.js"></script>
+     <style type="text/css">
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.form{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 5px;
+	background-color: #F08080;
+}
+.form input{
+	font-size: 18px;
+	padding: 5px;
+	margin: 5px 0;
+	outline-color: #f55e18; 
+}
+.form-btn{
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 25px;
+
+}
+     </style>
+  </head>
+  <body bgcolor="#FBCEB1">
+ 
+ 	<div class="form">
+ 		<h1 >Авторизация</h1>   
+   	<input  type="text"  placeholder="Логин" name="login_" id="login_"><br/>   
+   	<input type="password"  placeholder="Пароль" name="password_" id="password_"><br/> 
+   	<button onclick="authorization(getElementById('login_').value,getElementById('password_').value)" class="form-btn">Войти</button>
+   	<button class="form-btn"><a style="text-decoration: none;" href="register.html">Регистрация</a> </button>
+ </div>
+  </body>
+</html>
